@@ -77,7 +77,7 @@ def sort_files(folder):
     return images, videos, documents, audio, archives, unknown_extensions
 
 
-if __name__ == '__main__':
+def main():
     if len(sys.argv) < 2:
         print('Usage: python clean.py <folder>')
         sys.exit(1)
@@ -110,5 +110,6 @@ if __name__ == '__main__':
     for extension in unknown_extensions:
         print(extension)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     main()
